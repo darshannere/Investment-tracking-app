@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'button.dart';
-// ignore: unused_import
+
 import 'inputfield.dart';
 
 class InputWrapper extends StatelessWidget {
@@ -17,7 +17,7 @@ class InputWrapper extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(10)),
-            child: inputfield(),
+            child: InputField(),
           ),
           SizedBox(
             height: 40,
@@ -34,6 +34,4 @@ class InputWrapper extends StatelessWidget {
       ),
     );
   }
-
-  inputfield() {}
 }

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
 import 'header.dart';
-// ignore: unused_import
-import 'button.dart';
+import 'inputwrapper.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -22,7 +20,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 80,
             ),
-            header(),
+            Header(),
             Expanded(
                 child: Container(
               decoration: BoxDecoration(
@@ -31,15 +29,11 @@ class LoginPage extends StatelessWidget {
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
                   )),
-              child: inputwrapper(),
+              child: InputWrapper(),
             ))
           ],
         ),
       ),
     );
   }
-
-  header() {}
-
-  inputwrapper() {}
 }
