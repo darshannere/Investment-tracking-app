@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
+// ignore: unused_import
 import 'header.dart';
-import 'inputwrapper.dart';
+// ignore: unused_import
+import 'button.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class LoginPage extends StatelessWidget {
           gradient: LinearGradient(begin: Alignment.topCenter, colors: [
             Colors.cyan.shade500,
             Colors.cyan.shade300,
-            Colors.cyan.shade400
+            Colors.cyan.shade400,
           ]),
         ),
         child: Column(
@@ -38,7 +39,7 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  inputwrapper() {}
-
   header() {}
+
+  inputwrapper() {}
 }

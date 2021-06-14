@@ -22,7 +22,7 @@ class InputField extends StatelessWidget {
               border: Border(bottom: BorderSide(color: Colors.grey.shade200))),
           child: TextField(
             decoration: InputDecoration(
-                hintText: "Enter your password",
+                hintText: "Enter your Password",
                 hintStyle: TextStyle(color: Colors.grey),
                 border: InputBorder.none),
           ),

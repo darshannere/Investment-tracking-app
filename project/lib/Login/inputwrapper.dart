@@ -12,7 +12,7 @@ class InputWrapper extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SizedBox(
-            height: 40,
+            height: 41,
           ),
           Container(
             decoration: BoxDecoration(
