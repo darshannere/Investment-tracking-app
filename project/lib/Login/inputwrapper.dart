@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project/home.dart';
 
 import 'button.dart';
 
@@ -29,7 +30,13 @@ class InputWrapper extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          Button()
+          Button(),
+          TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/home');
+            },
+            child: Text('Home'),
+          )
         ],
       ),
     );
