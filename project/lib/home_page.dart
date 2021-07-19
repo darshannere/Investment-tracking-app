@@ -3,23 +3,20 @@ import 'dart:convert';
 
 import 'dart:math';
 
+import 'package:project/services/process.dart';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:project/services/stockdetailpage.dart';
 
-class stockclass {
-  late List stocklist;
-  stockclass(this.stocklist);
-}
-
-class test5 extends StatefulWidget {
-  const test5({Key? key}) : super(key: key);
+class Process extends StatefulWidget {
+  const Process({Key? key}) : super(key: key);
 
   @override
   _ProcessState createState() => _ProcessState();
 }
 
-class _ProcessState extends State<test5> {
+class _ProcessState extends State<Process> {
   List stocks = [];
   final List<MaterialColor> _colors = [
     Colors.blue,
@@ -38,8 +35,6 @@ class _ProcessState extends State<test5> {
     this.setState(() {
       stocks = jsonDecode(response.body);
     });
-
-    print(stocks);
 
     return "Success!";
   }
@@ -104,22 +99,7 @@ class _ProcessState extends State<test5> {
                           _colors[index % _colors.length];
 
                       return new ListTile(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => stockdetailpage(
-                                passedlist: stocks,
-                                passedindex: index,
-                              ),
-                              // Pass the arguments as part of the RouteSettings. The
-                              // DetailScreen reads the arguments from these settings.
-                              settings: RouteSettings(
-                                arguments: stocks[index],
-                              ),
-                            ),
-                          );
-                        },
+                        onTap: () {},
                         leading: new CircleAvatar(
                           backgroundColor:
                               Color((Random().nextDouble() * 0xFFFFFF).toInt())
